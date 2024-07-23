@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+
+
+    <string-array name="reason">
+        <item></item>
+        <item>Reason1</item>
+        <item>Reason2</item>
+        <item>Reason3</item>
+        <item>Reason4</item>
+        <item>Reason5</item>
+    </string-array>
+
+
+
+
+    <string-array name="status">
+        <item>Select</item>
+        <item>Status1</item>
+        <item>Status2</item>
+        <item>Status3</item>
+        <item>Status4</item>
+        <item>Status5</item>
+        <item>Status6</item>
+
+
+    </string-array>
+
+
+
+
+
+    <string-array name="location">
+        <item>Madhapur</item>
+        <item>Kondapur</item>
+        <item>KBHP</item>
+        <item>Vizag</item>
+        <item>Hyderabad</item>
+    </string-array>
+
+
+
+    <string-array name="city">
+        <item></item>
+        <item>city1</item>
+        <item>city2</item>
+        <item>city3</item>
+        <item>city4</item>
+        <item>city5</item>
+    </string-array>
+
+
+    <string-array name="document">
+        <item>Select document type</item>
+        <item>document1</item>
+        <item>document2</item>
+        <item>document3</item>
+        <item>document4</item>
+    </string-array>
+
+
+
+    <string-array name="floor">
+        <item>Floor1</item>
+        <item>Floor2</item>
+        <item>Floor3</item>
+        <item>Floor4</item>
+        <item>Floor5</item>
+    </string-array>
+
+
+    <string-array name="room_type">
+        <item>room1</item>
+        <item>room2</item>
+
+    </string-array>
+
+    <string-array name="room_number">
+        <item>207</item>
+        <item>202</item>
+        <item>303</item>
+
+    </string-array>
+
+
+
+
+
+
+
+
+
+</resources>

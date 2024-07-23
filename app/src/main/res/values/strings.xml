@@ -1,0 +1,171 @@
+<resources>
+
+    <string name="app_name">Layout</string>
+    <string name="verification_title">Verification Code</string>
+    <string name="verification_message">Please enter the verification code sent \n to %s</string>
+    <string name="did_not_receive_otp">Didn\'t receive OTP? <u>Resend</u></string>
+    <string name="send_otp">Send OTP</string>
+
+
+    <string name="cancel_app">Cancel Appointment</string>
+    <string name="reason">Reason for cancellation</string>
+    <string name="comments">Comments</string>
+    <string name="text">Eligible for Refund Amount Rs.500</string>
+    <string name="button">Submit</string>
+    <string name="cancel_button">Cancellation Appointment</string>
+
+    <string name="status">Status</string>
+    <string name="location"> Location</string>
+    <string name="city">City</string>
+    <string name="Assigned">Assigned to</string>
+    <string name="Schedule">Schedule</string>
+    <string name="document">Document type</string>
+    <string name="back">Back</string>
+    <string name="update">Update</string>
+    <string name="msg"> Supported: JPG, JPEG, PNG, PDF and  File  should \n be maximum  25mb.</string>
+    <string name="name">AFB SMEAR</string>
+    <string name="kumar_Ramajan">kumar Ramajan| Female|40 yrs</string>
+    <string name="Admission_Date">Admission Date: 01/05/2024 5:30PM |ID: #123456</string>
+    <string name="Test_Status">Lab Test Status</string>
+    <string name="Tech_name">Arjun bijilani</string>
+    <string name="lab_tech">LAB Technician</string>
+    <string name="phone">+91 9547905765</string>
+
+    <string name="dashboard">Dash Board</string>
+    <string name="con">Continue</string>
+    <string name="lab">Lab Reports</string>
+    <string name="History">History</string>
+
+
+    <string name="test_name">Test Name</string>
+    <string name="test_value">AFB Smear,Slit Skin Group: Microbiology ,TAT: 6 hrs </string>
+    <string name="code">Code</string>
+    <string name="sample">Sample</string>
+    <string name="code_value">S1279</string>
+    <string name="sample_type">Slit Skin</string>
+    <string name="Edit">Edit</string>
+    <string name="price">Price</string>
+    <string name="price_value">1000</string>
+
+
+    <string name="patient_name">kumar Ramajan</string>
+    <string name="op_id">#OP1234679</string>
+    <string name="vitals_recorded">Vitals Recorded</string>
+    <string name="female">|  F  |</string>
+    <string name="age">48yrs |</string>
+    <string name="time">5.00PM</string>
+
+
+    <string name="chief_complaints">Chief Complaints/History</string>
+    <string name="clinical">Clinical/Physical Examination</string>
+    <string name="diagonsis">Diagnosis</string>
+    <string name="care">Plan Of Care/Treatment</string>
+    <string name="aspects">Preventive aspects(Whenever Applicable)</string>
+    <string name="invest">Investigations</string>
+    <string name="word_count">0/500</string>
+
+
+    <string name="opid_txt">OPID</string>
+    <string name="opid">#OPID123456</string>
+    <string name="mobile_text">Mobile Number</string>
+    <string name="mobile_num">+91 9876543212</string>
+    <string name="visit_reason">Reason for Visit</string>
+    <string name="neck_pain">Neck Pain</string>
+    <string name="service_name">Service Name</string>
+    <string name="spain_conditions">Spain Conditions</string>
+    <string name="save">Save</string>
+    <string name="care_clinic">Care Clinic</string>
+    <string name="clinic_address">KPHB, Hyderabad</string>
+    <string name="shyamala">name</string>
+    <string name="logout"><u>Logout</u></string>
+    <string name="physiotherapist">Physiotherapist |</string>
+
+
+    <string name="id_txt">ID</string>
+    <string name="id">#IDIHOU123</string>
+    <string name="hou_clinic">HealthOnUsClinic</string>
+    <string name="person">Dharma Rao</string>
+    <string name="per">RajKumar</string>
+    <string name="shiva">Shiva Kumar</string>
+    <string name="labtech"> Lab Technician</string>
+    <string name="patientname">Patient Name</string>
+    <string name="smear">Smear, </string>
+    <string name="pus">Pus,  </string>
+    <string name="hou_code">Code:S1283, </string>
+    <string name="group">Group: Microbiology, </string>
+    <string name="tat">TAT: 6hrs4321</string>
+    <string name="completed">Completed</string>
+    <string name="upload_text">Upload Documents</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="doc">Document</string>
+    <string name="foe">Front Office Exec |</string>
+    <string name="status_completed">Status  Completed</string>
+    <string name="labtest_details_txt">Smear,Pus,Code:S1283,Group:Microbiology,TAT:6hrs4321</string>
+    <string name="text_msg">Supported: JPG,JPEG,PNG,PDF,File should be maximum 5mb.</string>
+
+
+    <string name="person_name">Mohan kumar Bommana</string>
+    <string name="op_number">#OP1234567890</string>
+    <string name="male">Male</string>
+    <string name="date">Schedule Date on:</string>
+    <string name="doj">12th June 2024, </string>
+    <string name="time_slot">11:00AM</string>
+    <string name="landmark">kavurihills,</string>
+    <string name="pincode">- 500081</string>
+    <string name="state">Hyderabad</string>
+    <string name="Dno">1150-1/2,</string>
+    <string name="uhid">#UHDIHOU123</string>
+    <string name="uhid_text">UHID</string>
+    <string name="assessment">Initial Assessment</string>
+    <string name="session">Sessions</string>
+    <string name="perspection">Upload Prescription</string>
+    <string name="verified">Verified</string>
+    <string name="admin">Clinic Admin |</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="clinic_profile">Clinic Profiles</string>
+    <string name="user_management">User  Management</string>
+    <string name="doc_consult">Doc \nConsultation</string>
+    <string name="leave_management">Leave Management</string>
+    <string name="help_center">Help Center</string>
+
+    <string name="healthonus">HealthOnUs</string>
+    <string name="people_clnic">People Care Wellness Center</string>
+    <string name="place">Madhapur</string>
+    <string name="hou">In HOU Network</string>
+    <string name="yes">Yes</string>
+    <string name="logo">Logo</string>
+    <string name="address">Address</string>
+    <string name="address_text">1-92,Kavuri Hills Rd,Kummari Basti,Vittal Rao \n Nagar,Madhapur,Hyderabad-500081</string>
+
+
+
+
+    <string name="update_profile">Update Clinic Profile</string>
+    <string name="clinic_text">Clinic Name</string>
+    <string name="network">Is In HOU Network ?</string>
+    <string name="Email">Email</string>
+    <string name="email_text">lalithaged@gmail.com</string>
+
+
+    <string name="consult_board">Consultation Board</string>
+    <string name="floor1">Floor1</string>
+    <string name="floor">Floor</string>
+    <string name="add_room">Add Room</string>
+    <string name="select_floor">Select Floor</string>
+    <string name="room_type">Room Type</string>
+    <string name="room_no">Room No.</string>
+
+
+
+    <string name="total_clinics">Total Clinics</string>
+
+
+
+
+
+
+
+</resources>
