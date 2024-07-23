@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_file"/>
+
+
+
+
+    <TextView
+        android:id="@+id/patient_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:text="Patient Information"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:textSize="@dimen/dimen_20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/dimen_10dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_info"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/user_profile"
+        android:layout_marginStart="@dimen/dimen_10dp"/>
+
+<!--colons-->
+
+    <TextView
+        android:id="@+id/firstname_colon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_alignBaseline="@+id/label_firstname"
+        android:layout_centerHorizontal="true"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/lastname_colon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/label_lastname"
+        android:text="-"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Email_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_Email"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Password_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_Password"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/Phone_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_Phone"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/city_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_city"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/Address_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_Address"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/state_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_state"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/zipcode_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_zipcode"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/country_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_country"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_date"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/age_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_age"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Occupation_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_occupation"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/gender_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_gender"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_status"
+            android:text="-"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+
+
+    <!--labels-->
+
+
+    <TextView
+        android:id="@+id/label_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/first_name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/label_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_firstname"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/last_name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/label_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_lastname"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/Email"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/label_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_Email"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/Password"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/label_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_Password"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/Phone_Number"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_Phone"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/Address"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/label_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_Address"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/City"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/label_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_city"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/State"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_zipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_state"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/Zipcode"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_zipcode"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/country"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/label_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_country"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/DOB"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_occupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_age"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/Occupation"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/label_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_date"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/Age"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_occupation"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/Gender"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_gender"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/Martial_Status"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+<!--    output_fields-->
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_alignBaseline="@+id/firstname_colon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/firstname_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstname"
+        android:layout_alignBaseline="@+id/lastname_colon"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/lastname_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastname"
+        android:layout_alignBaseline="@+id/Email_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/Email_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Email"
+        android:layout_alignBaseline="@+id/Password_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/Password_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_alignBaseline="@+id/Phone_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/Phone_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Phone"
+        android:layout_alignBaseline="@+id/Address_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/Address_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Address"
+        android:layout_alignBaseline="@+id/city_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/city_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:layout_alignBaseline="@+id/state_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/state_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/zipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/state"
+        android:layout_alignBaseline="@+id/zipcode_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/zipcode_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/Country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zipcode"
+        android:layout_alignBaseline="@+id/country_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/country_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Country"
+        android:layout_alignBaseline="@+id/date_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/date_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_alignBaseline="@+id/age_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/age_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/Occupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Age"
+        android:layout_alignBaseline="@+id/Occupation_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/Occupation_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Occupation"
+        android:layout_alignBaseline="@+id/gender_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/gender_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+
+    <TextView
+        android:id="@+id/Martial_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Gender"
+        android:layout_alignBaseline="@+id/status_colon"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/status_colon"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

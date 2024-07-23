@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_file"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/patient_details_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header">
+
+            <TextView
+                android:id="@+id/patient_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="Patient  Information"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_profile"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/patient_info" />
+
+            <TextView
+                android:id="@+id/firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/first_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+            <EditText
+                android:id="@+id/firstname_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstname" />
+
+            <TextView
+                android:id="@+id/lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/last_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstname_edit" />
+
+            <EditText
+                android:id="@+id/lastname_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                app:layout_constraintTop_toBottomOf="@+id/lastname" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/Email"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lastname_edit" />
+
+            <EditText
+                android:id="@+id/email_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/Phone_Number"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_edit" />
+
+
+            <EditText
+                android:id="@+id/phonenumber_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                android:digits="0123456789+"
+                android:inputType="phone"
+                android:maxLength="10"
+                app:layout_constraintTop_toBottomOf="@+id/phonenumber" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/Address"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phonenumber_edit" />
+
+
+            <EditText
+                android:id="@+id/address_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                app:layout_constraintTop_toBottomOf="@+id/address"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/City"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_edit" />
+
+            <EditText
+                android:id="@+id/city_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                app:layout_constraintTop_toBottomOf="@+id/city" />
+
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/State"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/city_edit" />
+
+            <EditText
+                android:id="@+id/state_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                app:layout_constraintTop_toBottomOf="@+id/state" />
+
+            <TextView
+                android:id="@+id/zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/Zipcode"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/state_edit" />
+
+            <EditText
+                android:id="@+id/zipcode_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                android:inputType="number"
+                android:maxLength="6"
+                app:layout_constraintTop_toBottomOf="@+id/zipcode" />
+
+            <TextView
+                android:id="@+id/Country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/country"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/zipcode_edit" />
+
+
+            <FrameLayout
+                android:id="@+id/frame_country_fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                app:layout_constraintTop_toBottomOf="@+id/Country">
+
+                <Spinner
+                    android:id="@+id/Country_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/country"
+                    app:layout_constraintTop_toBottomOf="@+id/occupation" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/DOB"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame_country_fl" />
+
+            <TextView
+                android:id="@+id/dob_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DD/MM/YYYY"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/edit"
+                android:drawableRight="@drawable/date2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/Age"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dob_edit" />
+
+            <EditText
+                android:id="@+id/age_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/age" />
+
+            <TextView
+                android:id="@+id/occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/Occupation"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/age_edit" />
+
+
+            <FrameLayout
+                android:id="@+id/frame_occupation_fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit"
+                app:layout_constraintTop_toBottomOf="@+id/occupation">
+
+                <Spinner
+                    android:id="@+id/occupation_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/occupation"
+                    app:layout_constraintTop_toBottomOf="@+id/occupation_txt" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/Gender"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame_occupation_fl" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/male_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:text="@string/Male"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/female_button"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/female_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:background="@drawable/button_selector"
+                android:text="@string/Female"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/other_button"
+                app:layout_constraintStart_toEndOf="@+id/male_button"
+                app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/other_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:background="@drawable/button_selector"
+                android:text="@string/others"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/female_button"
+                app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+            <TextView
+                android:id="@+id/maritalstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/Martial_Status"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/male_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/single_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:text="@string/single"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/maritalstatus" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/married_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:background="@drawable/button_selector"
+                android:text="@string/married"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/single_button"
+                app:layout_constraintTop_toBottomOf="@+id/maritalstatus" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/divorced_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:background="@drawable/button_selector"
+                android:text="@string/divorced"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/married_button"
+                app:layout_constraintTop_toBottomOf="@+id/maritalstatus" />
+
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/single_button" />
+
+            <TextView
+                android:id="@+id/tc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_25dp"
+                android:text="@string/condition"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/checkbox"
+                app:layout_constraintTop_toBottomOf="@+id/single_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/custom_ripple"
+                android:text="save"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/checkbox" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

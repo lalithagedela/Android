@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="occupation">
+        <item>Teacher</item>
+        <item>Software</item>
+        <item>Farmer</item>
+        <item>Carpenter</item>
+        <item>Actor</item>
+        <item>Actress</item>
+        <item>Singer</item>
+        <item>dancer</item>
+    </string-array>
+
+
+    <string-array name="country">
+        <item>India</item>
+        <item>America</item>
+        <item>Canada</item>
+        <item>Australia</item>
+        <item>Europe</item>
+        <item>China</item>
+        <item>Pakistan</item>
+        <item>italy</item>
+    </string-array>
+
+    <string-array name="state">
+        <item>AndhraPradesh</item>
+        <item>Telangana</item>
+        <item>TamilNadu</item>
+        <item>kerala</item>
+        <item>punjab</item>
+        <item>Rajasthan</item>
+        <item>Harayana</item>
+        <item>chattishgarh</item>
+    </string-array>
+
+
+
+    <string-array name="location">
+        <item></item>
+        <item>location2</item>
+        <item>location3</item>
+        <item>location4</item>
+        <item>location5</item>
+        <item>location6</item>
+    </string-array>
+
+
+    <string-array name="Document">
+        <item> Select document type</item>
+        <item>type1</item>
+        <item>type2</item>
+        <item>type3</item>
+        <item>type4</item>
+        <item>type5</item>
+        <item>type6</item>
+    </string-array>
+
+    <string-array name="status">
+        <item> Select Status</item>
+        <item>status1</item>
+        <item>status2</item>
+        <item>status3</item>
+        <item>status4</item>
+        <item>status5</item>
+        <item>status6</item>
+        <item>status7</item>
+        <item>status8</item>
+    </string-array>
+
+
+
+    <string-array name="city">
+        <item></item>
+        <item>city2</item>
+        <item>city3</item>
+        <item>city4</item>
+        <item>city5</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+
+</resources>

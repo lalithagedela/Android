@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools"
+
+    >
+
+    <data>
+
+        <variable
+            name= "model"
+            type= "com.example.sample.LoginViewModel"/>
+    </data>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textSize="@dimen/dimen_20dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="@dimen/dimen_20dp"
+        android:layout_below="@id/username"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_20dp"
+        android:onClick="@{()-> model.onButtonClicked()}"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        bind:toastMessage="@{model.toastMessage}"
+        />
+
+
+
+</RelativeLayout>
+</layout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textSize="@dimen/dimen_20dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="@dimen/dimen_20dp"
+        android:layout_below="@id/username"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_20dp"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:onClick="postData"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:background="#E0E0E0"/>
+
+</RelativeLayout>

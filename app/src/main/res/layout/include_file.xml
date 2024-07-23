@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/new_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NewRegistration"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/demographics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Demographics"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

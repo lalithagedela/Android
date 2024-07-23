@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="mobileNumber"
+            type="java.lang.String" />
+    </data>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/verification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_90dp"
+        android:text="@string/verification_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/verification_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:gravity="center"
+        android:lineSpacingExtra="10sp"
+        android:padding="@dimen/dimen_20dp"
+        android:text="@{@string/verification_message(mobileNumber)}"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verification_title" />
+
+
+    <com.chaos.view.PinView
+        android:id="@+id/otp_pin_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:hint="@string/send_otp"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:itemBackground="@drawable/pin_layout"
+        app:itemCount="6"
+        app:itemHeight="60dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="10dp"
+        app:itemWidth="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verification_msg"
+        app:lineColor="@color/_6c6b9d"
+        app:viewType="rectangle" />
+
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:text="00:59"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_pin_view"/>
+
+
+    <TextView
+        android:id="@+id/not_received_request"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:gravity="center"
+        android:text="@string/did_not_receive_otp"
+        android:textColor="@color/xx"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        app:layout_constraintTop_toBottomOf="@+id/not_received_request"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/not_received_request"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Phone_Number">Phone Number</string>
+    <string name="Address">Address</string>
+    <string name="City">City</string>
+    <string name="Zipcode">zip code</string>
+    <string name="country">Country</string>
+    <string name="DOB">Date of birth</string>
+    <string name="Age">Age</string>
+    <string name="State">State</string>
+    <string name="Occupation">Occupation</string>
+    <string name="Gender">Gender</string>
+    <string name="Martial_Status">Martial Status </string>
+    <string name="Male">Male </string>
+    <string name="Female">Female </string>
+    <string name="others">Others </string>
+    <string name="single">Single </string>
+    <string name="married">Married </string>
+    <string name="divorced">divorced</string>
+    <string name="save">save</string>
+    <string name="condition">Accept terms and conditions and privacy policy</string>
+
+
+
+
+    <string name="status">Status</string>
+    <string name="location">Location</string>
+    <string name="city">City</string>
+    <string name="Assigned">Assigned to</string>
+    <string name="Schedule">Schedule</string>
+    <string name="document">Document type</string>
+    <string name="back">Back</string>
+    <string name="update">Update</string>
+    <string name="company">HEALTHONUS</string>
+    <string name="manager">Managers</string>
+    <string name="emp">Employees</string>
+    <string name="msg"> Supported: JPG, JPEG, PNG, PDF and  File  should\n be maximum  25mb.</string>
+
+
+
+
+    <string name="model_button">Open Model Dialog Button</string>
+    <string name="verification_title">Verification Code</string>
+    <string name="verification_message">Please enter the verification code sent \n to %s</string>
+    <string name="did_not_receive_otp">Didn\'t receive OTP? <u>Resend</u></string>
+    <string name="send_otp">Send OTP</string>
+    <string name="mobile">Enter Mobile Number</string>
+
+
+
+
+
+
+
+    <string name="user_id">User Id</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="login_button">Login Button</string>
+
+
+
+</resources>
